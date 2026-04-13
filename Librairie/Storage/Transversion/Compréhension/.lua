@@ -130,6 +130,65 @@ local GamesData = {
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.20"))()
 	 end,
 
+  	 Exemple 21 
+	 [] = function()
+		print("✅ Jeu reconnu : " .. gameName)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.21"))()
+	 end,
+	
+  	 Exemple 22 
+	 [] = function()
+		print("✅ Jeu reconnu : " .. gameName)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.22"))()
+	 end,
+	
+  	 Exemple 23 
+	 [] = function()
+		print("✅ Jeu reconnu : " .. gameName)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.23"))()
+	 end,
+	
+  	 Exemple 24 
+	 [] = function()
+		print("✅ Jeu reconnu : " .. gameName)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.24"))()
+	 end,
+	
+  	 Exemple 25 
+	 [] = function()
+		print("✅ Jeu reconnu : " .. gameName)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.25"))()
+	 end,
+	
+  	 Exemple 26 
+	 [] = function()
+		print("✅ Jeu reconnu : " .. gameName)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.26"))()
+	 end,
+	
+  	 Exemple 27 
+	 [] = function()
+		print("✅ Jeu reconnu : " .. gameName)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.27"))()
+	 end,
+	
+  	 Exemple 28 
+	 [] = function()
+		print("✅ Jeu reconnu : " .. gameName)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.28"))()
+	 end,
+	
+  	 Exemple 29 
+	 [] = function()
+		print("✅ Jeu reconnu : " .. gameName)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.29"))()
+	 end,
+	
+  	 Exemple 30 
+	 [] = function()
+		print("✅ Jeu reconnu : " .. gameName)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.30"))()
+	 end,
 }
 
 -- ==========================================
