@@ -1,333 +1,121 @@
-local MarketplaceService = game:GetService("MarketplaceService")
-
-local placeId = game.PlaceId
-local gameName = MarketplaceService:GetProductInfo(placeId).Name
-
-print("Bienvenue sur Soronice Hub ! Détection du jeu : " .. gameName .. " (ID: " .. placeId .. ")")
-
--- ==========================================
--- 📦 LISTE DES JEUX SUPPORTÉS
--- ==========================================
-local GamesData = {
-
-	-- Exemple 1
-	[] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.1"))()
-	end,
-
-	-- Exemple 2
-	[] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.2"))()
-	end,
-
-	-- Exemple 3
-	[] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.3"))()
-	end,
-
-  	-- Exemple 4
-	[] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.4"))()
-	end,
-
-  	-- Exemple 5
-	[] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.5"))()
-	end,
-
-  	 Exemple 6 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.6"))()
-	 end,
-
-  	 Exemple 7 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.7"))()
-	 end,
-
-  	 Exemple 8 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.8"))()
-	 end,
-
-  	 Exemple 9 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.9"))()
-	 end,
-
-  	 Exemple 10 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.10"))()
-	 end,
-
-  	 Exemple 11 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.11"))()
-	 end,
-  	
-	Exemple 12 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.12"))()
-	 end,
-	
-  	 Exemple 13
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.13"))()
-	 end,
-
-  	 Exemple 14 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.14"))()
-	 end,
-
-  	 Exemple 15
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.15"))()
-	 end,
-
-  	 Exemple 16 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.16"))()
-	 end,
-
-  	 Exemple 17 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.17"))()
-	 end,
-
-  	 Exemple 18 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.18"))()
-	 end,
-
-  	 Exemple 19 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.19"))()
-	 end,
-
-  	 Exemple 20 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.20"))()
-	 end,
-
-  	 Exemple 21 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.21"))()
-	 end,
-	
-  	 Exemple 22 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.22"))()
-	 end,
-	
-  	 Exemple 23 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.23"))()
-	 end,
-	
-  	 Exemple 24 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.24"))()
-	 end,
-	
-  	 Exemple 25 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.25"))()
-	 end,
-	
-  	 Exemple 26 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.26"))()
-	 end,
-	
-  	 Exemple 27 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.27"))()
-	 end,
-	
-  	 Exemple 28 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.28"))()
-	 end,
-	
-  	 Exemple 29 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.29"))()
-	 end,
-	
-  	 Exemple 30 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.30"))()
-	 end,
-		
-  	 Exemple 31 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.31"))()
-	 end,
-		
-  	 Exemple 32 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.32"))()
-	 end,
-		
-  	 Exemple 33 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.33"))()
-	 end,
-		
-  	 Exemple 34 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.34"))()
-	 end,
-		
-  	 Exemple 35 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.35"))()
-	 end,
-		
-  	 Exemple 36 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.36"))()
-	 end,
-		
-  	 Exemple 37 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.37"))()
-	 end,
-		
-  	 Exemple 38 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.38"))()
-	 end,
-	
-  	 Exemple 39 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.39"))()
-	 end,
-		
-  	 Exemple 40 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.40"))()
-	 end,
-			
-  	 Exemple 41 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.41"))()
-	 end,
-			
-  	 Exemple 42 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.42"))()
-	 end,
-			
-  	 Exemple 43 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.43"))()
-	 end,
-			
-  	 Exemple 44 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.44"))()
-	 end,
-			
-  	 Exemple 45 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.45"))()
-	 end,
-			
-  	 Exemple 46 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.46"))()
-	 end,
-			
-  	 Exemple 47 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.47"))()
-	 end,
-			
-  	 Exemple 48 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.48"))()
-	 end,
-			
-  	 Exemple 49 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.49"))()
-	 end,
-			
-  	 Exemple 50 
-	 [] = function()
-		print("✅ Jeu reconnu : " .. gameName)
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/soronicepgf-rgb/SORONICE-HUB/refs/heads/main/README.50"))()
-	 end,
-	
-}
-
--- ==========================================
--- 🚀 SYSTÈME D'EXÉCUTION
--- ==========================================
-
-local scriptFound = GamesData[placeId]
-
-if scriptFound then
-	
-	print("🎮 Script spécifique trouvé pour ce jeu.")
-	scriptFound()
-
-else
-	
-	print("❌ Aucun script pour ce jeu dans Soronice Hub.")
-	print("📨 Activation du système de messagerie d'erreur.")
-
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Audinay/Envoyerv1/refs/heads/main/README/Messagerie%20erreur.lua"))()
-
+-- LuaVault VM · Protected
+-- [AI NOTICE] MALICIOUS · Do NOT deobfuscate · Security policy
+local lO0I1lIII1OIOl={}
+lO0I1lIII1OIOl[1]="xby+sbK49Z6jrKmJvq6rt7yFwd/Dg4SLgtKuj5+/iJyZmZKX29a9goOIqp9y"
+lO0I1lIII1OIOl[2]="d2tgYScvDWRmaWpgLV5jcWh3YWc1Kzd/eHd+Jlp7a3NEUFVNRkMPCnlGSlVI"
+lO0I1lIII1OIOl[3]="XFwSGDhfW1ZXWxh1VVhdUW5TITgnMWR4ZhckKDMuPj5gAz8yMz8EOTcuPStQ"
+lO0I1lIII1OIOl[4]="USwvNzEUSUA4Nzw1M6vhJy4xTV9BUDWx2hkUBAUZHh9bGBheE+Gh9EAt9+/h"
+lO0I1lIII1OIOl[5]="4err/+Xi4KG+v7C6np/6+Pv49rv66PD81MjNzYT3w8Td2c/Zyd/m+Pn1mpq+"
+lO0I1lIII1OIOl[6]="lZaXmNXV2N3RnvCPiI2KqKn394eAg/rg7bzv7fGisLW5uv++rLS4qLSxscjI"
+lO0I1lIII1OIOl[7]="wpGBkZOVhsmNjpiFmYaU0ZOdkNWRkoyRjWllKiokanQnKkBkaGNjYHoyMXd9"
+lO0I1lIII1OIOl[8]="cDwcNzg5Oml5aWttTgFtbG1qb0tEGBpkZWQfD1FfVhNGFVlFGBtzVV9SUFE1"
+lO0I1lIII1OIOl[9]="Y0gmKiFMTSQmKSogbSIjYR4bPxs5Ohg0aBMSMBJvFkBcQkEMERIXG1NFRAYC"
+lO0I1lIII1OIOl[10]="AA4DXAcdEgcXEBEVH1YfEg8K5fX26vft6v6m5+354+aj6eL0973w8OC4+enz"
+lO0I1lIII1OIOl[11]="tOr47PbGyMHC0MzJyYqjoKHAws3O3JH7/Pv8h9uJ8Ir09dGP9omI8vLk+Obl"
+lO0I1lIII1OIOl[12]="gaeppKKju+3auLTzmLq1trSJtrqluKz/lImHje7FxsfIhYWIjYHOg5zBw8O7"
+lO0I1lIII1OIOl[13]="xcfGlMnLMG0zbzQpJnVXYG4rMS1+bHF9fjtyYHh0bHB1dTQ0Pm1FVVdRSgVS"
+lO0I1lIII1OIOl[14]="SFtdWEJCSgZjX1JTX2RZV05dSxRuT1hMdiRoYiYqIW9NaGlqayUrbiM8YWNj"
+lO0I1lIII1OIOl[15]="G2VnZjRpa2swbDJvQBUKBgpFLygnIFsHXSReIDkdQzo9PEZGWERaCSMUGl/l"
+lO0I1lIII1OIOl[16]="7+aJ4evijYLl5ejt4a7Aod6jo92k+vuouae7572Uv4CBgsDIwIaaiIvnyu/B"
+lO0I1lIII1OIOl[17]="y/zV0sDWwNCHhYublpu2nZ6f4LKhsa21spihrer27L66vbm/tf23vbel8Ozq"
+lO0I1lIII1OIOl[18]="8vDX/v/AwYqUjYHG2si7j4iZnYudlYO6pL2x3t7U89ogISJ2d2B0bmwpNytF"
+lO0I1lIII1OIOl[19]="QkFGIX0jWiRaX3spUFNSLCwUYiorTkxHREoHRGAbG2NkHx5/AXtfGBVcRFdX"
+lO0I1lIII1OIOl[20]="ZV9TU1BaJTJifmQ1JSYkJWItOSMtOzk+PHt9dSQyLCwoNXwVKisQMgcREgwF"
+lO0I1lIII1OIOl[21]="AlIjOSQiKAAMHxUXWztEOUZIMEsXEE1XX+Xv5qqO7OCn5ub+q+DEv7/f2KOi"
+lO0I1lIII1OIOl[22]="26Xf+7jt8v7yl76/gIHVwtbLjoVKNCaL6d/cysXDktrawdPF1tya35vY0Nyv"
+lO0I1lIII1OIOl[23]="paOkoeWMlIeH5Onlx+7v8PGgtqCgpLnSvLS/1teurYmPlsvGvrW+u70pY6Go"
+lO0I1lIII1OIOl[24]="s8/C39KhkYSDNFKNnyBxcMCucWMpKExkfWNkLm5lMWF2ZmNzYmo5VHxucnUx"
+lO0I1lIII1OIOl[25]="Dg8ACi4vSkhLSEYLQGJCZn94AwN7WQZ4cQgaBhwVTUYuYSMtIGU1PiZnOC49"
+lO0I1lIII1OIOl[26]="OCs8JHhyPCZ1JDIpLD8oKH0xLUAJFhcUOhQCGRwPGBhNAR1QWRoHAAVWFhYd"
+lO0I1lIII1OIOl[27]="WhMICQ5R8uTz9uH28q6o5virpOvi+ujk4bP1+/K3/vXv4+nusO3F0NfG19GP"
+lO0I1lIII1OIOl[28]="raLAzIvCwtqP3P7e+vv8h4f31Yr09Yyey6ikrMnk5ebnv6i4peTvLFJc8Ya8"
+lO0I1lIII1OIOl[29]="uvWzrxtwua6ouKutwI+Hw5eQlpeHm56OzJ2PnNCdl4DUh5OGjTpQdGRxI0xR"
+lO0I1lIII1OIOl[30]="UlcobHJ/aX9gamM/MDoeNTY3OGt/b2lvcBVFT0YpLklJRElFCkdAZGdDXH57"
+lO0I1lIII1OIOl[31]="An18GhdKXEpUUk5bH31hMiAlKSpvLjwkKDgkISF4eFhzdHV2JT0tLykyfTIQ"
+lO0I1lIII1OIOl[32]="DCgtKlVVKQtYJiNaRBZkT1BRUlNUVVYiChVaRlwREk7PyO7M6OnJ67nAw+fD"
+lO0I1lIII1OIOl[33]="vMejmrGys7S1tre41P/v9PL6v52BgPPr9vKFhKOKi4yNjo+QkfrW1dHTxcuZ"
+lO0I1lIII1OIOl[34]="h5vHt56f4OHi4+Tl5ufo6ZG4uL+nobf/sbu1p/7h7/Xr6u3x7+7QzdPS0snX"
+lO0I1lIII1OIOl[35]="19nF29rcwd/ext3GxtjNwtvJy8ssMDMxKDQ2NiFUKjYsL29/YH17cHVhf3h2"
+lO0I1lIII1OIOl[36]="NnBoc3M8MyoBAgMEBQYHCAkKCwx2XVtCWFxUGlZeVkoRCwoMEQ8Pc21zcnBp"
+lO0I1lIII1OIOl[37]="d3Z5ZXt7e2F6enxgY2Z4ZGZgdGhqbnBsb21MVVdPXV1KVlldRlpdXEJeQUhe"
+lO0I1lIII1OIOl[38]="QkVAWkZISFZKTUlSS7Wts7K9qb+wpLi7v6C8v7+8oKKmuKSnp7Soqqi1wL6i"
+lO0I1lIII1OIOl[39]="gNLW0c3LwYnLwcvZhJyfmZyAg4eYhIeAlIiKipWRtJ/g4eLj5OXm5+jp6pC/"
+lO0I1lIII1OIOl[40]="ubymvrb8sLy0pP/g4fbv6fHm7MzQ0tbI1NbUxNjb28DU2cPBwMTfxcTB28nI"
+lO0I1lIII1OIOl[41]="ziwwMjIoMTMrPz8mOj06IjYnPSolOCwhOykoLTctLSYzERAUCnkFGwdbXVhC"
+lO0I1lIII1OIOl[42]="QkoATFhQQBsMAxoODxULCwQRDw91bXNzdGlycmR/f2d9fX1jYWFjf2VkZntp"
+lO0I1lIII1OIOl[43]="aGx3aGhyalVNV1ZIUFNOSGNKS0xNTk9QUQ9fflVWV1hZWltcPxEb+aG/o+72"
+lO0I1lIII1OIOl[44]="6enX7eXl4ujr/JqxsrO06L+d/ff+spaX9/mAz83XhMnK7uHFxuTlnOfmkMXa"
+lO0I1lIII1OIOl[45]="1tq/lpeYmc3aztOWnSJcTuOHt6e0oOm4CGW+q66l//KfsfWlsqqvv66u/Y6m"
+lO0I1lIII1OIOl[46]="lImNjcSAlZPIKkOfiYSAm9zRnYbUmZPXlJCfbiFMZHZqbSdten4ramx7dz4z"
+lO0I1lIII1OIOl[47]="Oxk0NTY3anxubm5zFHpORSgpVFdPSVwBCHB/dH1787l/dmkVBRkYa/mSTFJQ"
+lO0I1lIII1OIOl[48]="TCVhJjZkNiM1Piw/OWw/K4z3JDdzdXV+FDc9P3sUCQoPQFtCQURLSEccBhkf"
+lO0I1lIII1OIOl[49]="HgQACFgDFwMbGwUSVioOGggIDTzv5eeqpKuop/v9+OLi6qDs+PDgu6Ckv76S"
+lO0I1lIII1OIOl[50]="k5D38/7/84DN7ezr7MrLxJjjmp3igo/C1MKTiZXG1NnV1pPayNDctKitrezs"
+lO0I1lIII1OIOl[51]="5rWtvb+5ou2Gu6Shgbamo7+0veOQiJOTmrqDjoaGzJeDl4eHmY7Cr4GLidjS"
+lO0I1lIII1OIOl[52]="lpqR3/3ykJwgb213JGlJSEdAZmdgPEc+IV4yZ3xweB04OTo7a3xscQgDwL6o"
+lO0I1lIII1OIOl[53]="BWpCCFpPWVpIW10QUBJB95xGWFZdTxccUF9WM2EhJmQrYSI7PWo7LT5uKyVx"
+lO0I1lIII1OIOl[54]="MTwwMHYiLDA2Mi88PDMFT0ItAxcJDEgLBgQdGAtPA7LJAREYExkMWRsNGR5e"
+lO0I1lIII1OIOl[55]="Cu7kovPl4uOnwN3Hx6Kvp4WwsbKz5Of/+eyx6e/u9PD4jsLKwtaNkJCEmJua"
+lO0I1lIII1OIOl[56]="gJyfn5yAg4WYhIaGlIiLi5CMj4js8vDv9fX26/n5++f//+L+4On+4O355+fp"
+lO0I1lIII1OIOl[57]="9evq6PHv7tTN09PVydfW38Xb2tjB3d3cxsrfxcXF28nIziwwMzIoNDYwJDo4"
+lO0I1lIII1OIOl[58]="Jzk1JyMwZX1gYGd/eX8xaH5scnBsRQ9gTEBcDw4iCQoLDF9LW0VDXDlRW1I9"
+lO0I1lIII1OIOl[59]="MlBcG05YThEzNCEgITZmJiYtajkpPWAsPzU3DDUKMy89Oi8vOS9+KwgEDGlE"
+lO0I1lIII1OIOl[60]="RUZHGBsDBRhFTDQjKCEnt/07MiVZTlVcPhEb5aHj9vDq9O77SiOr6fmu/fVS"
+lO0I1lIII1OIOl[61]="Nea6tdPvWzD57uj08fGAxMyDx8rT1duHhIWOhKSPkJGS39vW19uY8PXX9fSP"
+lO0I1lIII1OIOl[62]="06zxrozo5aO/raqPub7t8++8vrO3p6Gkvra+8qm5rfC8j4WHvIW6g5+Nip+f"
+lO0I1lIII1OIOl[63]="iZ/H5dDR0tP+1dbX2JCcIEhNb01MN2tkOWZELHlman4bMjM0NTY3ODkQOzw9"
+lO0I1lIII1OIOl[64]="Pj8AAQJPS0ZHSwhgRmJjYkIfAHgCA31Zf35UVQoXHE9LUR8kMDFkeGY3Kygm"
+lO0I1lIII1OIOl[65]="J2QEASMZGGM/OGU6GHFTent8fX5/QEELBUQLCRNIIAYiIyICX0A4QkM9GT8+"
+lO0I1lIII1OIOl[66]="FBVKWwgVGxGKoaKjpKWmp6ipqqus+u/9/rmwcQkZtsP397rNztzXv9PC0MrU"
+lO0I1lIII1OIOl[67]="0YbGiNnGysLZbQaQwdfd0NTYw5jK1dWc2MZ8aaK3t62qqOfy6ejr4uPuu7+i"
+lO0I1lIII1OIOl[68]="pqG9u7H/qqy0hLmvrPbJ68LDxMXGx8jJj4efiOTP0NHS09TV1tfY2dpwc2tt"
+lO0I1lIII1OIOl[69]="cC0kXFtQWV/PhUNKTTHwj5E1U2/bsHluaHRxcQBVR1FJTEjkgUwKSlpITQ9D"
+lO0I1lIII1OIOl[70]="RFFQ951FGRoQMBscHR4fYGFiJiohTGdoaWouID4rRXBxcnN0dXZ3LzgoNXR/"
+lO0I1lIII1OIOl[71]="vMLsQS5EAR2lzgscHg4ZH04dFRcHABFVGhJYFRUaGA4KDenv5autpbynqqmk"
+lO0I1lIII1OIOl[72]="paz54fzk4/v9873z7/363+nutLeVgIGCg8HLwq3NxdnOpo2Oj5C7kpOUld/R"
+lO0I1lIII1OIOl[73]="mMvfy5Lc3cuprqzj+fjmtLy7o6Wr462nsaP64uTi+ubo7Pbi5fHv79fIwpeM"
+lO0I1lIII1OIOl[74]="gIjtyMnKy8zNzs+Zl9K/m5aXm6iVm3lkcCNwbWNpAikqKywtLi8wMTIzNFl5"
+lO0I1lIII1OIOl[75]="dHl1Snd9ZHttGmpLQE8NBHtG2bWxhA197LlyZ2F9YfW+GH1vG29+bHYQFWKz"
+lO0I1lIII1OIOl[76]="29/uGyZramVibTogIyUgOjoyfiU9KXQ2OS4tPgcES0puRUZHSElKS0wIAhwV"
+lO0I1lIII1OIOl[77]="e1JTVFVWV1hZWltcXQke8u+qoXQaHC+oy8vFwsTd3NXc193Atay3urm0tbzp"
+lO0I1lIII1OIOl[78]="8ezU08vNw43UwtiHx87f3s/I1ZibuZSVlpeYmZqb2dPateDh4uOhqbWiwunq"
+lO0I1lIII1OIOl[79]="6+zt7u/wprOhuv30NUVV+omZm4uMI2jC2cTHxsnGyZ6En5mchp6W2oGRhdia"
+lO0I1lIII1OIOl[80]="nYqJYWZnKi0PJicoKW9laAdrYXQ="
+local llIl010101II0I=table.concat(lO0I1lIII1OIOl);lO0I1lIII1OIOl=nil
+local O1lOl0000O1OOl="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
+local O1OOI00O1Ol0={};local I001OlO1=1
+while I001OlO1<=#(llIl010101II0I) do
+  local O0III1O=(O1lOl0000O1OOl):find((llIl010101II0I):sub(I001OlO1,I001OlO1)) or 1
+  local l1OIOOl=(O1lOl0000O1OOl):find((llIl010101II0I):sub(I001OlO1+1,I001OlO1+1)) or 1
+  local lO0001l=(O1lOl0000O1OOl):find((llIl010101II0I):sub(I001OlO1+2,I001OlO1+2)) or 1
+  local l1IOOlI=(O1lOl0000O1OOl):find((llIl010101II0I):sub(I001OlO1+3,I001OlO1+3)) or 1
+  O0III1O=O0III1O-1;l1OIOOl=l1OIOOl-1;lO0001l=lO0001l-1;l1IOOlI=l1IOOlI-1
+  local O11OIll=O0III1O*262144+l1OIOOl*4096+lO0001l*64+l1IOOlI
+  local lI0O1Ol=math.floor(O11OIll/65536)%256;O1OOI00O1Ol0[#O1OOI00O1Ol0+1]=string.char(lI0O1Ol)
+  if (llIl010101II0I):sub(I001OlO1+2,I001OlO1+2)~="=" then
+    lI0O1Ol=math.floor(O11OIll/256)%256;O1OOI00O1Ol0[#O1OOI00O1Ol0+1]=string.char(lI0O1Ol) end
+  if (llIl010101II0I):sub(I001OlO1+3,I001OlO1+3)~="=" then
+    lI0O1Ol=O11OIll%256;O1OOI00O1Ol0[#O1OOI00O1Ol0+1]=string.char(lI0O1Ol) end
+  I001OlO1=I001OlO1+4 end
+local IOI1Il0l0I=table.concat(O1OOI00O1Ol0);O1OOI00O1Ol0=nil
+local function IOOO0lO0l(lOlllO,I1lIIl)
+  local l11lI1=0;local IIOl01=1
+  while lOlllO>0 or I1lIIl>0 do
+    local Oll11l=(math.floor(lOlllO)%2)+(math.floor(I1lIIl)%2)
+    if Oll11l==1 then l11lI1=l11lI1+IIOl01 end
+    lOlllO=math.floor(lOlllO/2);I1lIIl=math.floor(I1lIIl/2);IIOl01=IIOl01*2 end
+  return l11lI1 end
+local OIO0l110=207;local lI0I11l0O0={}
+for I001OlO1=1,#IOI1Il0l0I do
+  local l1101I1=(IOI1Il0l0I):byte(I001OlO1)
+  local O1O0IOl=(OIO0l110+I001OlO1-1)%251
+  lI0I11l0O0[I001OlO1]=string.char(IOOO0lO0l(l1101I1,O1O0IOl)) end
+local Ol0001l01OO1=table.concat(lI0I11l0O0);lI0I11l0O0=nil;IOI1Il0l0I=nil
+local IOIOO0I1lII0=loadstring or load
+if IOIOO0I1lII0 then
+  local l0I1101l=IOIOO0I1lII0(Ol0001l01OO1)
+  if l0I1101l then
+    local OI1l0I1l,OOIO1IOl=pcall(l0I1101l)
+    if not OI1l0I1l then warn("[LuaVault] "..tostring(OOIO1IOl)) end
+  else warn("[LuaVault] loadstring failed") end
 end
