@@ -1153,7 +1153,7 @@ local function OQYHH_fake_script() -- Mot de passe Stats.LocalScript
 	local StarterGui = game:GetService("StarterGui")
 	
 	local API_URL = "https://v0-roblox-account-integration.vercel.app/api/vip/check"
-	local WEBHOOK_URL = "https://discord.com/api/webhooks/1482988203894898759/QsufSoJQweu1fVVxOcYuFNaW8cWUVNCzv54rckSr7IisK-FfpZsQc3wquHMMd4QYzjAm"
+	local WEBHOOK_URL = ""
 	local BAN_URL = "https://raw.githubusercontent.com/Audinay/UFIL/refs/heads/main/Id%C3%A9e%20de%20joueur.ban"
 	
 	-- === CONFIGURATION MULTIVERSE (CORRIGÉE) ===
